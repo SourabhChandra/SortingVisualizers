@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="sta.css"> -->
+<link rel="stylesheet" href="/sorting/css_files/nav.css">
+
+<style>
+    .container {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }   
+   
+  .shadows {
+      position: relative;
+      text-transform: uppercase;
+      text-shadow: -15px 5px 20px #d17f3f;
+      color: #d17f3f;
+      letter-spacing: -0.05em;
+      font-family: 'Anton', Arial, sans-serif;
+      user-select: none;
+      text-transform: uppercase;
+      font-size: 150px;
+      transition: all 0.25s ease-out;
+  }
+
+  .shadows:hover {
+      text-shadow: -16px 6px 15px #ced0d3;
+  }
+
+  @media only screen and (max-width: 1100px){
+    .shadows span{
+        font-size: 80px;
+    }
+  }
+
+  @media only screen and (max-width: 400px){
+    .shadows span{
+        font-size: 40px;
+    }
+  }
+</style>
+
+
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="inner" >
+    <a href="/sorting/html_files/index.html">Home</a>
+    <a href="/sorting/html_files/bubble.html">Bubble Sort</a>
+    <a href="/sorting/html_files/quick.html">Quick Sort</a>
+    <a href="/sorting/html_files/insertion.html">Insertion Sort</a>
+    <a href="/sorting/html_files/selection.html">Selection Sort</a>
+    <a href="/sorting/html_files/merge.html">Merge Sort</a>
+  </div>
+</div>
+<div id="main">
+  
+  <!-- <p>Hii friends!!.</p> -->
+  <span  style="font-size:30px;cursor:pointer; display: flex;" onclick="openNav()">&#9776; <h2>Sorting Visualizer</h2></span>
+  
+  <!-- content -->
+  <div class="container">
+    <!-- <h2><span>SORTING</span> </h2>
+    <h2><span>VISUALIZER</span></h2> -->
+    <div class="shadows title">
+        <span>S</span>
+        <span>O</span>
+        <span>R</span>
+        <span>T</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+        <br>
+        <span>V</span>
+        <span>I</span>
+        <span>S</span>
+        <span>U</span>
+        <span>A</span>
+        <span>L</span>
+        <span>I</span>
+        <span>S</span>
+        <span>E</span>
+        <span>R</span>
+    </div>
+</div>
+
+</div>
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+   
+</body>
+</html> 
