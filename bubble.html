@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="sta.css"> -->
+<link rel="stylesheet" href="nav2.css">
+<link rel="stylesheet" href="content.css">
+
+</head>
+<body class="body">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="inner" style="margin-top: 60px;">
+    <a href="index.html">Home</a>
+  <a href="bubble.html">Bubble Sort</a>
+  <a href="quick.html">Quick Sort</a>
+  <a href="insertion.html">Insertion Sort</a>
+  <a href="selection.html">Selection Sort</a>
+  <a href="merge.html">Merge Sort</a>
+  </div>
+</div>
+<div id="main">
+  
+  <!-- <p>Hii friends!!.</p> -->
+  <span  style="font-size:30px;cursor:pointer; display: flex;" onclick="openNav()">&#9776; <h2>Bubble Sort</h2></span>
+  
+  <!-- content -->
+  <nav id="navigation_bar">
+    <div class="row">
+        <div class="col gap-2 d-sm-flex" id="newArray">
+            <button type="button" class="btn btn-outline-success btn-dark button newArray">New Array</button>
+            
+            <!-- stop button -->
+            <button type="button" class="btn btn-outline-success btn-dark button stopbtn">Stop</button>
+            <!-- <button type="button" class="btn btn-outline-success btn-dark button playbtn">Play</button> -->
+            
+        </div>
+        <div class="col range-input" id="input">
+            <span id="size">Size
+                                                  <!--  max = 100,      value= 60 -->
+                <input id="arr_sz" type="range" min="5" max="40" step=1 value=20>   
+            </span>
+            <span id="speed">Speed
+                <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+            </span>
+        </div>
+        <div class="col gap-2 d-sm-flex justify-content-end">
+            <button type="button" class="btn btn-outline-primary btn-dark button bubbleSort">Bubble Sort</button>
+        </div>
+    </div>
+</nav>
+
+  <div id="bars" class="flex-container" ></div>
+  
+
+</div>
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="sorting1.js"></script>
+    <script src="bubble.js"></script>
+   
+</body>
+</html> 
